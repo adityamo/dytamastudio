@@ -3,25 +3,36 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["plugin:react/recommended", "google", "prettier"],
+  "extends": [
+    "next/core-web-vitals", // untuk Next.js
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
-    },
-    "ecmaVersion": 14,
-    "sourceType": "module"
+    }
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["@typescript-eslint"],
   "rules": {
-    "require-jsdoc": 0,
-    "new-cap": 0,
-    "spaced-comment": [2, "always", { "exceptions": ["/-"], "markers": ["/"] }],
+    "require-jsdoc": "off",
+    "new-cap": "off",
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "exceptions": ["/-"],
+        "markers": ["/"]
+      }
+    ],
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [
       1,
       { "extensions": [".js", ".jsx", ".tsx", ".ts"] }
-    ] //should add ".ts" if typescript project
+    ]
   },
   "settings": {
     "react": {
