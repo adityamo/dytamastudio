@@ -20,11 +20,15 @@ export default function PublicLayout({ children }: Props) {
 
   return (
     <HeroUIProvider>
-      <NextThemesProvider attribute="class" disableTransitionOnChange>
-        <div className="relative flex flex-col" id="app-container">
+      <NextThemesProvider
+        defaultTheme="light"
+        attribute="class"
+        disableTransitionOnChange
+      >
+        <main className="flex-1 content" id="app-container">
           <NavbarLanding />
-          <div>{children}</div>
-        </div>
+          {children}
+        </main>
       </NextThemesProvider>
     </HeroUIProvider>
   );
