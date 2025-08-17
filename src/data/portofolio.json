@@ -1,0 +1,23 @@
+[
+  {
+    "name": "HRIS Lentera",
+    "desc": "Lentera adalah salah satu platform digitial yang berfokus pada Human Resource Information System, lentera menyediakan platform website yang digunakan sebagai admin untuk mengelola management karyawan, sedangkan mobile apps digunakan karyawan terkait, lentera memiliki feature pencatatan absensi, lembur, form izin, dan reinbursment",
+    "type": "Website",
+    "develope": ["Figma", "Nextjs", "NodeJs", "React", "PHP", "Laravel"],
+    "imgUrl": "/assets/img/project/HRIS.png"
+  },
+  {
+    "name": "SILINK",
+    "desc": "Silink digunakan sebagai website yang digunakan customer Seino Indomobil Logistics untuk melakukan pemesanan dan perencanaan pengiriman, silink membantu dari Seino Indomobil Logistics dan juga customer sehingga mudah untuk booking pengiriman kapan pun dan dimanapun",
+    "type": "Website",
+    "develope": ["Figma", "Nextjs", "NodeJs", "React", "PHP", "Laravel"],
+    "imgUrl": "/assets/img/project/Silink-cover.png"
+  },
+  {
+    "name": "STTC Logistics",
+    "desc": "Seino Traffic Truck Control adalah aplikasi internal dari seino indomobil logistic yang digunakan sebagai sistem internal untuk memantau dan memonitoring pengiriman, tracking, pelacakan pengiriman, approve surat jalan, dan lain-lain.",
+    "type": "Website",
+    "develope": ["Figma", "Nextjs", "NodeJs", "React", "PHP", "Laravel"],
+    "imgUrl": "/assets/img/project/fullPageSTTC.png"
+  }
+]

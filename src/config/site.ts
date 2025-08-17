@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Dytama Studion",
+  name: "Dytama Studio",
   description: "Portofolio Aditya Septama",
   ogImage: "https://nextui.org/twitter-cards/nextui.jpeg",
   author: "aditya septama",

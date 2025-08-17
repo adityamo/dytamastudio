@@ -7,7 +7,10 @@ import { Chip } from "@heroui/react";
 
 const AboutContent = () => {
   return (
-    <div className="relative w-full  bg-white dark:bg-slate-900">
+    <section
+      className="relative w-full  bg-white dark:bg-slate-900"
+      id="AboutDytama"
+    >
       <Container>
         <div className="relative w-full">
           <div className="relative w-full space-y-2 text-center justify-center pb-10">
@@ -78,7 +81,7 @@ const AboutContent = () => {
                   height={100}
                   src={"/assets/img/photo/tools-develope.svg"}
                   alt="dytama-step"
-                  className="w-[40px] h-auto lg:w-full lg:auto pt-5"
+                  className="w-auto h-auto lg:w-full lg:auto pt-5"
                 />
                 <div className="flex flex-col space-y-1 px-4 py-0">
                   <h4 className="text-xl lg:text-xl font-semibold">
@@ -117,7 +120,7 @@ const AboutContent = () => {
                       height={100}
                       src={"/assets/img/photo/tangga.svg"}
                       alt="dytama-step"
-                      className="w-[40px] h-auto lg:w-[60px] lg:h-auto pt-5"
+                      className="w-[50px] h-auto lg:w-[60px] lg:h-auto pt-5"
                     />
                     <div className="relative px-2 py-4 space-y-3">
                       <h4 className="text-black text-lg lg:text-xl font-bold w-60">
@@ -146,7 +149,7 @@ const AboutContent = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

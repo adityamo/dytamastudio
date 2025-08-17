@@ -61,11 +61,11 @@ export default function Hero() {
             transition={{ duration: 0.6, type: "spring", bounce: 0 }}
             className="h-full flex flex-col justify-center items-center space-y-3 max-w-6xl mx-auto text-center"
           >
-            <div className="flex flex-row items-center px-5 py-1.5 bg-indigo-100 rounded-full mb-5">
-              <span className="bg-white rounded-full items-center justify-center p-1 me-2">
+            <div className="flex flex-row items-center px-5 py-1.5 bg-indigo-100 dark:bg-slate-700 rounded-full mb-5">
+              <span className="bg-white dark:bg-lime-50 rounded-full items-center justify-center p-1 me-2">
                 <LuShieldCheck className="text-secondary text-xs" />
               </span>
-              <p className="text-primary text-xs font-semibold">
+              <p className="text-primary dark:text-secondary text-xs font-semibold">
                 IT Solution dan Digital Product
               </p>
             </div>
