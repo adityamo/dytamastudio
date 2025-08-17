@@ -5,7 +5,10 @@ import { Card, Image, Button } from "@heroui/react";
 
 const ProductList = () => {
   return (
-    <section className="relative py-28" id="ProductList">
+    <section
+      className="relative py-28 bg-white dark:bg-slate-900"
+      id="ProductList"
+    >
       <Container>
         <div className="flex w-full justify-between">
           <h3 className="text-3xl text-slate-700 dark:text-white font-semibold">

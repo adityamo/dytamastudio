@@ -30,7 +30,7 @@ const NavbarLanding = () => {
         maxWidth="lg"
         position="static"
         isBlurred={true}
-        className={`relative w-full max-w-5xl rounded-[26px] shadow-md backdrop-blur-md backdrop-saturate-150 transition-all duration-300
+        className={`relative border border-gray-200 dark:border-none w-full  max-w-5xl rounded-[26px] shadow-md backdrop-blur-md backdrop-saturate-150 transition-all duration-300
           ${scrolled ? "bg-white dark:bg-neutral-900" : "bg-white dark:bg-neutral-900/60"}`}
       >
         {/* Mobile Toggle */}
@@ -44,15 +44,15 @@ const NavbarLanding = () => {
             <Link href="/" className="flex items-center">
               <Image
                 src="/assets/img/brand/dytama-black.svg"
-                width={116}
-                height={32}
+                width={100}
+                height={22}
                 alt="Dytama Logo"
                 className="block dark:hidden"
               />
               <Image
                 src="/assets/img/brand/dytama-white.svg"
-                width={116}
-                height={32}
+                width={100}
+                height={22}
                 alt="Dytama Logo"
                 className="hidden dark:block"
               />
@@ -66,7 +66,7 @@ const NavbarLanding = () => {
             <NavbarItem key={item.href}>
               <Link
                 href={item.href}
-                className="text-sm text-slate-700 dark:text-white hover:text-neutral-400 transition-colors"
+                className="text-xs lg:text-[13px] font-normal text-black dark:text-white hover:text-neutral-400 transition-colors"
               >
                 {item.label}
               </Link>
@@ -82,12 +82,12 @@ const NavbarLanding = () => {
         </NavbarContent>
 
         {/* Mobile Menu */}
-        <NavbarMenu className="bg-neutral-900 px-4 py-4">
+        <NavbarMenu className="bg-white dark:bg-neutral-900 px-4 py-10">
           {siteConfig.navItems.map((item) => (
             <NavbarMenuItem key={item.href}>
               <Link
                 href={item.href}
-                className="block py-2 text-sm text-white hover:text-neutral-300"
+                className="block py-2 text-sm text-black dark:text-white hover:text-neutral-300"
               >
                 {item.label}
               </Link>
