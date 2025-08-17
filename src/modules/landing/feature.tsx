@@ -8,7 +8,10 @@ import { motion } from "framer-motion";
 
 const FeatureContent = () => {
   return (
-    <div className="relative w-full  bg-white dark:bg-slate-900">
+    <section
+      className="relative w-full  bg-white dark:bg-slate-900"
+      id="featureDytama"
+    >
       <Container className="py-10">
         <div className="relative w-full">
           <div className="relative w-full space-y-2 text-center justify-center ">
@@ -74,7 +77,7 @@ const FeatureContent = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 
