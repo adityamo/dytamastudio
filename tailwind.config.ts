@@ -32,13 +32,15 @@ const config: Config = {
         white: "#FFFFFF",
         black: {
           // ...colors.black,
-          DEFAULT: "#334155",
+          DEFAULT: "#1E293B",
           2: "#010101",
         },
+        primary: "#4338CA",
+        secondary: "#D1F701",
         success: "#10B981",
-        info: "#38BDF8",
+        info: "#3B82F6",
         danger: "#F43F5E",
-        warning: "#F59E0B",
+        warning: "#FACC15",
       },
       spacing: {
         4.5: "1.125rem",
