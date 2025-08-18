@@ -18,6 +18,6 @@
     "desc": "Seino Traffic Truck Control adalah aplikasi internal dari seino indomobil logistic yang digunakan sebagai sistem internal untuk memantau dan memonitoring pengiriman, tracking, pelacakan pengiriman, approve surat jalan, dan lain-lain.",
     "type": "Website",
     "develope": ["Figma", "Nextjs", "NodeJs", "React", "PHP", "Laravel"],
-    "imgUrl": "/assets/img/project/fullPageSTTC.png"
+    "imgUrl": "/assets/img/project/fullpageSTTC.png"
   }
 ]
