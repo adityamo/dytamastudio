@@ -90,6 +90,36 @@ const WorkingTogetherContent = () => {
               />
             </div>
           </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 pt-5 lg:pt-25 lg:items-center">
+            <Image
+              width={500}
+              height={500}
+              src={"/assets/img/illustration/kerjasama-2.png"}
+              alt="kerjasama-dytama"
+              className="w-[200px] h-auto lg:w-[450px] lg:h-auto"
+            />
+            <div className="relative w-full">
+              <div className="flex flex-col space-y-2">
+                <h3
+                  className="text-2xl lg:text-5xl font-bold text-black tracking-wide 
+             line-clamp-2 leading-snug lg:leading-tight dark:text-white"
+                >
+                  Website Profesional untuk
+                  <span className="text-primary mx-2">Bisnis</span> Anda
+                </h3>
+                <p className="text-gray-600 w-[90%] dark:text-white">
+                  Di era digital, website bukan sekadar profil
+                  perusahaan—website adalah wajah utama bisnis Anda. Dytama
+                  membantu Anda memiliki website yang modern, cepat, dan
+                  responsif, dirancang khusus untuk meningkatkan kepercayaan,
+                  menarik lebih banyak pengunjung, dan mengubah mereka menjadi
+                  pelanggan. Dengan desain yang user-friendly, optimasi
+                  performa, dan dukungan penuh dari tim ahli, website Anda akan
+                  siap membantu bisnis bertumbuh dan bersaing di pasar online.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </Container>
     </section>

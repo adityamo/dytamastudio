@@ -17,7 +17,7 @@ const PortofolioContent = () => {
       <Container>
         <div className="relative w-full py-5 lg:py-10">
           <div className="flex w-full justify-start space-y-1">
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-6">
               <h4 className="text-black text-2xl lg:text-4xl font-bold dark:text-white">
                 Beberapa Portofolio <span className="text-primary">Dytama</span>
               </h4>
@@ -29,7 +29,7 @@ const PortofolioContent = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 py-5">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 py-5 lg:py-10">
             {portofolioList.map((item, key: React.Key) => {
               return (
                 <Card

@@ -1,165 +1,72 @@
 "use client";
 import Container from "@/components/container";
 import React from "react";
-import { Card, Image, Button } from "@heroui/react";
+import Image from "next/image";
+// import { Card, Image, Button } from "@heroui/react";
 
 const ProductList = () => {
   return (
     <section
-      className="relative py-28 bg-white dark:bg-slate-900"
+      className="relative py-10 lg:py-18 bg-white dark:bg-slate-900"
       id="ProductList"
     >
       <Container>
-        <div className="flex w-full justify-between">
-          <h3 className="text-3xl text-slate-700 dark:text-white font-semibold">
-            Digital Product
-          </h3>
+        <div className="flex flex-col w-full justify-center">
+          <div className="flex flex-col space-y-2 text-center">
+            <h3 className="text-3xl text-slate-700 dark:text-white font-semibold">
+              Digital Product
+            </h3>
+            <p className="text-sm font-normal text-gray-500 dark:text-gray-50">
+              Dytama memiliki salah satu product digital yang siap pakai, untuk
+              informasi selengkapnya silahkan lihat card dibawah ini
+            </p>
+          </div>
         </div>
-        <div className="py-10 grid grid-cols-1 lg:grid-cols-3 gap-4 w-full justify-items-center">
-          <Card
-            isBlurred
-            isFooterBlurred
-            className="border-none w-full p-4"
-            radius="lg"
-          >
-            <Image
-              alt="Woman listing to music"
-              className="h-56 w-full rounded-md object-cover"
-              height={250}
-              src="https://heroui.com/images/hero-card.jpeg"
-              width={400}
-            />
-            <div className="mt-2 relative space-y-2">
-              <h3 className="text-base lg:text-xl text-black dark:text-white font-semibold">
-                Wedding Planner
-              </h3>
-              <p className="text-gray-600 dark:text-gray-200 font-normal text-xs lg:text-sm ">
-                A REAL Software-as-a-Service app with AI features and a payments
-                and credits system using the latest tech stack.
+        <div className="flex w-full justify-center py-10 lg:py-15">
+          <div className="flex items-center justify-between rounded-2xl border dark:border-none border-gray-200  bg-white dark:bg-primary shadow-sm p-6">
+            {/* Left Content */}
+            <div className="max-w-lg">
+              <h4 className="text-black dark:text-lime-200 text-xl lg:text-2xl font-semibold">
+                💍 Planus – Digital Wedding Planner
+              </h4>
+              <p className="mt-2 text-gray-600 dark:text-white">
+                Buat persiapan pernikahanmu jadi lebih rapi dan mudah,Cocok buat
+                kamu yang sedang mempersiapkan pernikahan, tapi bingung mulai
+                dari mana. Dengan template ini, kamu bisa merencanakan semua
+                keperluan pernikahan dari A–Z dengan mudah dan praktis.
               </p>
-            </div>
-            <div className="flex w-full justify-between pt-4">
-              <p className="text-xs text-gray-500 dark:text-white">test</p>
-              <Button
-                className="text-tiny bg-indigo-500 text-white dark:bg-black/20"
-                color="default"
-                radius="lg"
-                size="sm"
-                variant="flat"
+              <a
+                href="https://lynk.id/adityamo/9465pnqpgx2e"
+                className="mt-3 inline-flex items-center text-sm font-medium text-primary dark:text-secondary hover:underline"
               >
-                Learn more
-              </Button>
+                Lihat Selangkapnya
+                <svg
+                  className="ml-1 h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
             </div>
 
-            {/* <CardFooter className="mt-5 justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1  before:rounded-xl rounded-large bottom-1 shadow-small  z-10">
-              <b>test</b>
-              <Button
-                className="text-tiny text-white bg-black/20"
-                color="default"
-                radius="lg"
-                size="sm"
-                variant="flat"
-              >
-                Notify me
-              </Button>
-            </CardFooter> */}
-          </Card>
-          <Card
-            isBlurred
-            isFooterBlurred
-            className="border-none w-full p-4"
-            radius="lg"
-          >
-            <Image
-              alt="Woman listing to music"
-              className="h-56 w-full rounded-md object-cover"
-              height={250}
-              src="https://heroui.com/images/hero-card.jpeg"
-              width={400}
-            />
-            <div className="mt-2 relative space-y-2">
-              <h3 className="text-base lg:text-xl text-black dark:text-white font-semibold">
-                Wedding Planner
-              </h3>
-              <p className="text-gray-600 dark:text-gray-200 font-normal text-xs lg:text-sm ">
-                A REAL Software-as-a-Service app with AI features and a payments
-                and credits system using the latest tech stack.
-              </p>
+            {/* Right Content (Image Preview) */}
+            <div className="w-60">
+              <Image
+                width={500}
+                height={500}
+                src={"/assets/img/product/planus.png"}
+                alt="feature-dytama"
+                className="w-[100px] h-auto lg:w-[250px] lg:h-auto border border-gray-200 rounded-lg"
+              />
             </div>
-            <div className="flex w-full justify-between pt-4">
-              <p className="text-xs text-gray-500 dark:text-white">test</p>
-              <Button
-                className="text-tiny bg-indigo-500 text-white dark:bg-black/20"
-                color="default"
-                radius="lg"
-                size="sm"
-                variant="flat"
-              >
-                Learn more
-              </Button>
-            </div>
-
-            {/* <CardFooter className="mt-5 justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1  before:rounded-xl rounded-large bottom-1 shadow-small  z-10">
-              <b>test</b>
-              <Button
-                className="text-tiny text-white bg-black/20"
-                color="default"
-                radius="lg"
-                size="sm"
-                variant="flat"
-              >
-                Notify me
-              </Button>
-            </CardFooter> */}
-          </Card>
-          <Card
-            isBlurred
-            isFooterBlurred
-            className="border-none w-full p-4"
-            radius="lg"
-          >
-            <Image
-              alt="Woman listing to music"
-              className="h-56 w-full rounded-md object-cover"
-              height={250}
-              src="https://heroui.com/images/hero-card.jpeg"
-              width={400}
-            />
-            <div className="mt-2 relative space-y-2">
-              <h3 className="text-base lg:text-xl text-black dark:text-white font-semibold">
-                Wedding Planner
-              </h3>
-              <p className="text-gray-600 dark:text-gray-200 font-normal text-xs lg:text-sm ">
-                A REAL Software-as-a-Service app with AI features and a payments
-                and credits system using the latest tech stack.
-              </p>
-            </div>
-            <div className="flex w-full justify-between pt-4">
-              <p className="text-xs text-gray-500 dark:text-white">test</p>
-              <Button
-                className="text-tiny bg-indigo-500 text-white dark:bg-black/20"
-                color="default"
-                radius="lg"
-                size="sm"
-                variant="flat"
-              >
-                Learn more
-              </Button>
-            </div>
-
-            {/* <CardFooter className="mt-5 justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1  before:rounded-xl rounded-large bottom-1 shadow-small  z-10">
-              <b>test</b>
-              <Button
-                className="text-tiny text-white bg-black/20"
-                color="default"
-                radius="lg"
-                size="sm"
-                variant="flat"
-              >
-                Notify me
-              </Button>
-            </CardFooter> */}
-          </Card>
+          </div>
         </div>
       </Container>
     </section>

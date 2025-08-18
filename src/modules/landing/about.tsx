@@ -76,13 +76,21 @@ const AboutContent = () => {
             </div>
             <div className="grid grid-rows-2 gap-6">
               <div className="bg-white border border-gray-200 rounded-xl shadow-sm bg-gradient-to-t from-indigo-100 to-white">
-                <Image
-                  width={100}
-                  height={100}
-                  src={"/assets/img/photo/tools-develope.svg"}
-                  alt="dytama-step"
-                  className="w-auto h-auto lg:w-full lg:auto pt-5"
-                />
+                <motion.div
+                  initial={{ y: 40, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
+                  viewport={{ once: false, amount: 0.2 }}
+                >
+                  <Image
+                    width={100}
+                    height={100}
+                    src={"/assets/img/photo/tools-develope.svg"}
+                    alt="dytama-step"
+                    className="w-auto h-auto lg:w-full lg:auto pt-5"
+                  />
+                </motion.div>
+
                 <div className="flex flex-col space-y-1 px-4 py-0">
                   <h4 className="text-xl lg:text-xl font-semibold">
                     Product Design
@@ -93,19 +101,19 @@ const AboutContent = () => {
                   <div className="flex flex-row gap-2 pt-2">
                     <Chip
                       variant="bordered"
-                      className="bg-white rounded-md text-xs font-bold"
+                      className="bg-white text-black border border-gray-200 rounded-md text-xs font-bold"
                     >
                       Product
                     </Chip>
                     <Chip
                       variant="bordered"
-                      className="bg-white rounded-md text-xs font-bold"
+                      className="bg-white text-black border border-gray-200 rounded-md text-xs font-bold"
                     >
                       UI
                     </Chip>
                     <Chip
                       variant="bordered"
-                      className="bg-white rounded-md text-xs font-bold"
+                      className="bg-white text-black border border-gray-200 rounded-md text-xs font-bold"
                     >
                       UX
                     </Chip>
@@ -115,13 +123,21 @@ const AboutContent = () => {
               <div className="bg-secondary border border-gray-200 rounded-xl">
                 <div className="flex flex-row w-full justify-center space-y-2">
                   <div className="flex flex-col  max-w-lg text-center justify-center items-center">
-                    <Image
-                      width={100}
-                      height={100}
-                      src={"/assets/img/photo/tangga.svg"}
-                      alt="dytama-step"
-                      className="w-[50px] h-auto lg:w-[60px] lg:h-auto pt-5"
-                    />
+                    <motion.div
+                      initial={{ y: 40, opacity: 0 }}
+                      whileInView={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
+                      viewport={{ once: false, amount: 0.2 }}
+                    >
+                      <Image
+                        width={100}
+                        height={100}
+                        src={"/assets/img/photo/tangga.svg"}
+                        alt="dytama-step"
+                        className="w-[50px] h-auto lg:w-[60px] lg:h-auto pt-5"
+                      />
+                    </motion.div>
+
                     <div className="relative px-2 py-4 space-y-3">
                       <h4 className="text-black text-lg lg:text-xl font-bold w-60">
                         Mau Kolaborasi Bersama Dytama ?
