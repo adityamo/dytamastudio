@@ -123,20 +123,13 @@ const AboutContent = () => {
               <div className="bg-secondary border border-gray-200 rounded-xl">
                 <div className="flex flex-row w-full justify-center space-y-2">
                   <div className="flex flex-col  max-w-lg text-center justify-center items-center">
-                    <motion.div
-                      initial={{ y: 40, opacity: 0 }}
-                      whileInView={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
-                      viewport={{ once: false, amount: 0.2 }}
-                    >
-                      <Image
-                        width={100}
-                        height={100}
-                        src={"/assets/img/photo/tangga.svg"}
-                        alt="dytama-step"
-                        className="w-[50px] h-auto lg:w-[60px] lg:h-auto pt-5"
-                      />
-                    </motion.div>
+                    <Image
+                      width={100}
+                      height={100}
+                      src={"/assets/img/photo/tangga.svg"}
+                      alt="dytama-step"
+                      className="w-[50px] h-auto lg:w-[60px] lg:h-auto pt-5"
+                    />
 
                     <div className="relative px-2 py-4 space-y-3">
                       <h4 className="text-black text-lg lg:text-xl font-bold w-60">

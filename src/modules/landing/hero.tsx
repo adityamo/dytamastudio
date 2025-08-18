@@ -8,9 +8,11 @@ import { LuShieldCheck } from "react-icons/lu";
 
 const words = [
   "Bangun kreatifitasmu",
-  "Eksplorasi Desain",
-  "Produk Digital",
-  "Ide Segar",
+  "Bangun Website Profesional",
+  "Kembangkan Sistem Bisnis",
+  "Desain UI/UX",
+  "Produk Digital Inovatif",
+  "Solusi Teknologi Modern",
 ];
 
 const FlippingWords: React.FC = () => {
