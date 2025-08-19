@@ -1,5 +1,4 @@
-"use client";
-
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 import {
   Navbar,
@@ -11,9 +10,9 @@ import {
   NavbarMenuItem,
   Link,
 } from "@heroui/react";
-import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import ThemeSwitcher from "../themeswitcher";
+import Image from "next/image";
 
 const NavbarLanding = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -43,18 +42,20 @@ const NavbarLanding = () => {
           <NavbarBrand>
             <Link href="/" className="flex items-center">
               <Image
-                src="/assets/img/brand/dytama-black.svg"
+                src="/assets/img/brand/dytama-color.svg"
                 width={100}
                 height={22}
                 alt="Dytama Logo"
                 className="block dark:hidden"
+                priority
               />
               <Image
-                src="/assets/img/brand/dytama-white.svg"
+                src="/assets/img/brand/dytama-black.svg"
                 width={100}
                 height={22}
                 alt="Dytama Logo"
                 className="hidden dark:block"
+                priority
               />
             </Link>
           </NavbarBrand>

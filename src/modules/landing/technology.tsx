@@ -2,7 +2,6 @@
 import Container from "@/components/container";
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const TechnologyContent = () => {
@@ -43,17 +42,14 @@ const TechnologyContent = () => {
               </p>
             </div>
           </div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0"
-          >
+          <div className="flex w-full items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
             <button
               type="button"
               className="py-3 px-10 inline-flex font-semibold items-center gap-x-2 text-sm rounded-xl border border-transparent bg-slate-800 text-white hover:bg-lime-500 focus:outline-hidden focus:bg-lime-500 disabled:opacity-50 disabled:pointer-events-none"
             >
               Contact Me Now <FiArrowUpRight className="" />
             </button>
-          </motion.div>
+          </div>
         </div>
       </Container>
     </section>

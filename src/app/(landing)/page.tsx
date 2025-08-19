@@ -8,7 +8,7 @@ import HowWeWorkContent from "@/modules/landing/howwework";
 import WorkingTogetherContent from "@/modules/landing/workingtogether";
 import TechnologyContent from "@/modules/landing/technology";
 
-export default function LandingPage() {
+export default async function LandingPage() {
   return (
     <>
       <Hero />
