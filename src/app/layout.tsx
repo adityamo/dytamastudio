@@ -7,7 +7,12 @@ import { fontSans } from "@/config/font";
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
-  keywords: ["Aditya Septama", "Portofolio Aditya Septama"],
+  keywords: [
+    "Aditya Septama",
+    "Portofolio Aditya Septama",
+    "Dytama",
+    "Dytama Studio",
+  ],
 };
 
 export default function RootLayout({
@@ -18,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AOSInit />
+      <head></head>
       <body className={fontSans.className}>{children}</body>
     </html>
   );
