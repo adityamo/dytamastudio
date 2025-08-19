@@ -26,7 +26,7 @@ export default function RootLayout({
       <head>
         <meta
           name="google-site-verification"
-          content="9V40jNgQWdJTsh5MsvlYE2kyl7ca46yH3AibIwGuFqs"
+          content="V2tw24D7BGzXxwKq3BKCcfmZkRaOq1uCMVM74x0o4JU"
         />
         <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
       </head>
