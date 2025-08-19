@@ -1,10 +1,28 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Dytama Studio",
-  description: "Portofolio Aditya Septama",
-  ogImage: "https://nextui.org/twitter-cards/nextui.jpeg",
+  name: "Dytama – Creative Digital Lab",
+  description:
+    "Dytama adalah personal branding dan creative digital space yang berfokus pada pembuatan website, desain UI/UX, produk digital, serta eksplorasi ide kreatif.",
+  ogImage: "/assets/img/brand/dytama-logo.png",
   author: "aditya septama",
+  keywords: [
+    "Dytama",
+    "Digital Creative",
+    "UI UX Design",
+    "Web Development",
+    "Produk Digital",
+    "Creative Lab",
+    "Portfolio Aditya Septama",
+    "Aditya Septama",
+    "Website Professional",
+    "Jasa buat website",
+    "Jasa UI  & UX",
+    "Buat Website Depok",
+    "Buat Website Jakarta",
+    "Design UI/UX Depok",
+    "Design UI/UX Jakarta",
+  ],
   email: process.env.NEXT_PUBLIC_EMAIL || "",
   address: process.env.NEXT_PUBLIC_ADDRESS || "",
   phone: process.env.NEXT_PUBLIC_PHONE || "",
@@ -41,6 +59,11 @@ export const siteConfig = {
     discord: "https://discord.gg/9b6yyZKmH4",
     sponsor: "https://patreon.com/jrgarciadev",
     portfolio: "https://jrgarciadev.com",
+  },
+  verification: {
+    google: "your-google-verification-code", // isi kalau pakai GSC
+    yandex: "",
+    yahoo: "",
   },
   navItems: [
     { label: "Home", href: "/", haveChild: false },
