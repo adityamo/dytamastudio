@@ -14,7 +14,7 @@ const WorkingTogetherContent = () => {
       <Container className="py-10 lg:py-15">
         <div className="relative w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-            <div className="relative w-full">
+            <div className="relative w-full order-last lg:order-first">
               <div className="flex flex-col space-y-2">
                 <h3
                   className="text-2xl lg:text-5xl font-bold text-black tracking-wide 
@@ -91,13 +91,16 @@ const WorkingTogetherContent = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 pt-5 lg:pt-25 lg:items-center">
-            <Image
-              width={500}
-              height={500}
-              src={"/assets/img/illustration/kerjasama-2.png"}
-              alt="kerjasama-dytama"
-              className="w-[200px] h-auto lg:w-[450px] lg:h-auto"
-            />
+            <div className="flex w-full justify-center lg:justify-start">
+              <Image
+                width={500}
+                height={500}
+                src={"/assets/img/illustration/kerjasama-2.png"}
+                alt="kerjasama-dytama"
+                className="w-full h-auto lg:w-[450px] lg:h-auto"
+              />
+            </div>
+
             <div className="relative w-full">
               <div className="flex flex-col space-y-2">
                 <h3

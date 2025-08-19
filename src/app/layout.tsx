@@ -4,6 +4,7 @@ import { siteConfig } from "@/config/site";
 import { AOSInit } from "@/components/aos";
 import { fontSans } from "@/config/font";
 import Script from "next/script";
+import NextTopLoader from "nextjs-toploader";
 
 const baseUrl = siteConfig.siteUrl ?? "http://localhost:3000";
 
@@ -14,10 +15,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   alternates: {
     canonical: baseUrl,
-    languages: {
-      "en-US": `${baseUrl}/en`,
-      id: `${baseUrl}/id`,
-    },
+    // languages: {
+    //   "en-US": `${baseUrl}/en`,
+    //   id: `${baseUrl}/id`,
+    // },
   },
   openGraph: {
     title: siteConfig.name,
@@ -37,14 +38,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        media: "(prefers-color-scheme: light)",
-        url: siteConfig.ogImage,
-        href: siteConfig.ogImage,
-      },
-      {
-        media: "(prefers-color-scheme: dark)",
-        url: siteConfig.ogImage,
-        href: siteConfig.ogImage,
+        url: "/favicon.ico",
       },
     ],
   },
@@ -55,21 +49,20 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <AOSInit />
       <head>
         <meta
           name="google-site-verification"
           content="V2tw24D7BGzXxwKq3BKCcfmZkRaOq1uCMVM74x0o4JU"
         />
         <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
-        <Script id="gtm-script" strategy="afterInteractive">
+        <Script id="gtm-script" strategy="lazyOnload">
           {`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -80,6 +73,18 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={fontSans.className}>
+        <AOSInit />
+        <NextTopLoader
+          color="#D1F701"
+          initialPosition={0.08}
+          crawlSpeed={200}
+          height={3}
+          crawl={true}
+          showSpinner={false}
+          easing="ease"
+          speed={200}
+          shadow="0 0 10px #F5AD0D,0 0 5px #F5AD0D"
+        />
         {children}
         <noscript>
           <iframe
