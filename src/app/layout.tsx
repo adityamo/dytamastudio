@@ -23,7 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AOSInit />
-      <head></head>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="9V40jNgQWdJTsh5MsvlYE2kyl7ca46yH3AibIwGuFqs"
+        />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+      </head>
       <body className={fontSans.className}>{children}</body>
     </html>
   );
