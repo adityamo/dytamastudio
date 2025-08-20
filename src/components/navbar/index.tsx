@@ -8,11 +8,11 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-  Link,
 } from "@heroui/react";
 import { siteConfig } from "@/config/site";
 import ThemeSwitcher from "../themeswitcher";
 import Image from "next/image";
+import Link from "next/link";
 
 const NavbarLanding = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -42,7 +42,7 @@ const NavbarLanding = () => {
           <NavbarBrand>
             <Link href="/" className="flex items-center">
               <Image
-                src="/assets/img/brand/dytama-color.svg"
+                src="/assets/img/brand/dytama-black.svg"
                 width={100}
                 height={22}
                 alt="Dytama Logo"
@@ -50,7 +50,7 @@ const NavbarLanding = () => {
                 priority
               />
               <Image
-                src="/assets/img/brand/dytama-black.svg"
+                src="/assets/img/brand/dytama-white.svg"
                 width={100}
                 height={22}
                 alt="Dytama Logo"

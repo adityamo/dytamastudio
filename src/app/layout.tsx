@@ -57,6 +57,12 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link
+          rel="icon"
+          type="image/png"
+          href="/assets/img/brand/dytama-icon.svg"
+        />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
         <meta
           name="google-site-verification"
           content="V2tw24D7BGzXxwKq3BKCcfmZkRaOq1uCMVM74x0o4JU"
