@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Dytama – Creative Digital Lab",
+  name: "Dytama – Jasa Pembuatan Website & Produk Digital Kreatif",
   description:
     "Dytama adalah personal branding dan creative digital space yang berfokus pada pembuatan website, desain UI/UX, produk digital, serta eksplorasi ide kreatif.",
   ogImage: "/assets/img/brand/dytama-logo.png",
@@ -67,8 +67,8 @@ export const siteConfig = {
   },
   navItems: [
     { label: "Home", href: "/", haveChild: false },
-    { label: "Product", href: "/product", haveChild: false },
-    { label: "About", href: "/about", haveChild: false },
+    { label: "Product", href: "#ProductList", haveChild: false },
+    { label: "About", href: "/#AboutDytama", haveChild: false },
     { label: "Contact", href: "/contact", haveChild: false },
   ],
 };

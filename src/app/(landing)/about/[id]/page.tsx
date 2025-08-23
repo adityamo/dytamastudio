@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import HeroAbout from "@/modules/about/HeroAbout";
 import CarrierHistory from "@/modules/about/CarrierHistory";

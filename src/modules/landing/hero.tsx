@@ -28,7 +28,7 @@ const FlippingWords: React.FC = () => {
   return (
     <div className="relative flex w-full justify-center items-center h-[3rem] lg:h-[2rem]">
       <AnimatePresence mode="wait">
-        <motion.span
+        <motion.h1
           key={words[currentWordIndex]}
           initial={{ opacity: 0, y: 40, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -40,7 +40,7 @@ const FlippingWords: React.FC = () => {
                      bg-clip-text text-transparent"
         >
           {words[currentWordIndex]}
-        </motion.span>
+        </motion.h1>
       </AnimatePresence>
     </div>
   );

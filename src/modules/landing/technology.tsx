@@ -17,8 +17,8 @@ const TechnologyContent = () => {
               Technology <span className="text-primary">Dytama</span>
             </h4>
             <p className="text-sm font-normal text-gray-500 dark:text-gray-50">
-              Dukung proyek kami, kami menggunakan banyak platform untuk
-              menyukseskan proyek ini
+              Jangan khawatir untuk kolaborasi bersama dytama, dytama memiliki
+              fleksibilitas teknologi untuk menunjang project anda
             </p>
           </div>
           <div className="pt-10 lg:pt-15 flex w-full justify-center">
@@ -31,14 +31,15 @@ const TechnologyContent = () => {
             />
           </div>
           <div className="pt-10 lg:pt-15 flex w-full justify-center">
-            <div className="relative max-w-2xl text-center justify-center pb-10">
-              <h4 className="text-black text-2xl lg:text-5xl font-bold dark:text-white">
-                Ready to take <span className="text-primary me-2">your</span>
-                digital presence to the next level?
-              </h4>
-              <p className="text-md font-normal pt-15 text-gray-500 dark:text-gray-50">
-                Reach out to me today and let&apos;s discuss how I can help you
-                achieve your goals.
+            <div className="relative max-w-5xl text-center justify-center pb-10">
+              <h3 className="text-black text-2xl lg:text-5xl font-bold dark:text-white">
+                Siap untuk bangun project
+                <span className="text-primary ms-2 me-2">Anda</span>
+                ketingkat yang berbeda ?
+              </h3>
+              <p className="text-md font-normal pt-10 lg:pt-5 text-gray-500 dark:text-gray-50">
+                Mulai kolaborasi dengan dytama saya hari ini dan mari diskusikan
+                bagaimana dytama dapat membantu Anda mencapai tujuan Anda.
               </p>
             </div>
           </div>
@@ -47,7 +48,7 @@ const TechnologyContent = () => {
               type="button"
               className="py-3 px-10 inline-flex font-semibold items-center gap-x-2 text-sm rounded-xl border border-transparent bg-slate-800 text-white hover:bg-lime-500 focus:outline-hidden focus:bg-lime-500 disabled:opacity-50 disabled:pointer-events-none"
             >
-              Contact Me Now <FiArrowUpRight className="" />
+              Hubungi Dytama <FiArrowUpRight className="" />
             </button>
           </div>
         </div>
