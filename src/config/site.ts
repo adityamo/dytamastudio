@@ -54,7 +54,10 @@ export const siteConfig = {
   },
   links: {
     github: "https://github.com/adityamo",
+    facebook: "https://web.facebook.com/aditya.septama/",
+    instagram: "https://www.instagram.com/dytama.studio/",
     twitter: "https://twitter.com/getnextui",
+    dribbble: "https://dribbble.com/adityaamo",
     docs: "https://nextui-docs-v2.vercel.app",
     discord: "https://discord.gg/9b6yyZKmH4",
     sponsor: "https://patreon.com/jrgarciadev",

@@ -5,6 +5,7 @@ import Container from "@/components/container";
 import { Button } from "@heroui/react";
 import Image from "next/image";
 import { LuShieldCheck } from "react-icons/lu";
+import { ContainerScroll } from "@/components/containerscroll";
 
 const words = [
   "Bangun kreatifitasmu",
@@ -34,7 +35,7 @@ const FlippingWords: React.FC = () => {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: -40, scale: 0.98 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
-          className="absolute text-4xl lg:text-5xl font-semibold tracking-tight 
+          className="absolute text-2xl lg:text-5xl font-semibold tracking-tight 
                      lg:leading-[1.2] text-center bg-gradient-to-b 
                      from-sky-800 dark:from-sky-100 to-foreground dark:to-foreground 
                      bg-clip-text text-transparent"
@@ -73,7 +74,7 @@ export default function Hero() {
             </div>
             <FlippingWords />
 
-            <h1 className="text-4xl lg:text-5xl font-semibold tracking-tight lg:leading-[1.2] text-center lg:antialiased bg-gradient-to-b from-sky-800 dark:from-sky-100 to-foreground dark:to-foreground bg-clip-text text-transparent">
+            <h1 className="text-2xl lg:text-5xl font-semibold tracking-tight lg:leading-[1.2] text-center lg:antialiased bg-gradient-to-b from-sky-800 dark:from-sky-100 to-foreground dark:to-foreground bg-clip-text text-transparent">
               bersama{" "}
               <span className="antialiased bg-gradient-to-r from-indigo-500 dark:from-indigo-400 to-indigo-800 dark:to-indigo-600 bg-clip-text text-transparent">
                 Dytama
@@ -129,6 +130,24 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
           className="bottom-0 w-full z-0"
         >
+          <ContainerScroll>
+            <Image
+              src="/assets/img/illustration/hero-illustration.svg"
+              alt="Ilustrasi Dashboard"
+              width={1200}
+              height={600}
+              className="mx-auto"
+              priority
+            />
+          </ContainerScroll>
+        </motion.div>
+
+        {/* <motion.div
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
+          className="bottom-0 w-full z-0"
+        >
           <Image
             src="/assets/img/illustration/hero-illustration.svg"
             alt="Ilustrasi Dashboard"
@@ -137,7 +156,7 @@ export default function Hero() {
             className="mx-auto"
             priority
           />
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
