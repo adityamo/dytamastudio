@@ -71,7 +71,7 @@ export const siteConfig = {
   navItems: [
     { label: "Home", href: "/", haveChild: false },
     { label: "Product", href: "#ProductList", haveChild: false },
-    { label: "About", href: "/#AboutDytama", haveChild: false },
+    { label: "About", href: "/about", haveChild: false },
     { label: "Contact", href: "/contact", haveChild: false },
   ],
 };

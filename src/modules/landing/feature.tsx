@@ -3,28 +3,25 @@ import React from "react";
 import Container from "@/components/container";
 import Image from "next/image";
 import { motion } from "framer-motion";
-// import featureData from "@/data/feature.json";
-// import { motion } from "framer-motion";
-// import { Chip } from "@heroui/react";
 
 const FeatureContent = () => {
   return (
     <section
-      className="relative w-full  bg-white dark:bg-slate-900"
+      className="relative w-full bg-white dark:bg-slate-900"
       id="featureDytama"
     >
       <Container className="py-10">
         <div className="relative w-full">
           <div className="flex flex-col space-y-2 text-center justify-center">
-            <p className="text-sm font-normal text-primary dark:text-gray-50">
-              Layanan
+            <p className="text-sm font-semibold text-primary dark:text-gray-50">
+              Services
             </p>
             <h4 className="text-black text-2xl lg:text-4xl font-bold dark:text-white">
               Beberapa layanan <span className="text-primary">Dytama</span>
             </h4>
           </div>
           <div className="flex w-full justify-center">
-            <div className="grid w-full grid-cols-1 max-w-5xl lg:grid-cols-3 max-auto gap-4 auto-rows lg:auto-rows-[24rem] pt-5 lg:pt-10 lg:pb-5">
+            <div className="grid w-full grid-cols-1 max-w-5xl lg:grid-cols-3 mx-auto gap-4 auto-rows-auto lg:auto-rows-[24rem] pt-5 lg:pt-10 lg:pb-5">
               <div className="lg:col-span-2 group/bento shadow-input row-span-1 flex flex-col justify-between space-y-1 lg:space-y-4 rounded-xl border bg-gradient-to-tl from-indigo-500 to-indigo-800 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none">
                 <div className="flex flex-col space-y-2 h-auto lg:h-40 p-4">
                   <h3 className="text-lg lg:text-2xl font-semibold text-white ">
@@ -37,26 +34,7 @@ const FeatureContent = () => {
                   </p>
                 </div>
                 <motion.div
-                  initial={{ x: 40, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
-                  viewport={{ once: false, amount: 0.2 }}
-                  className="overflow-hidden relative w-full"
-                >
-                  <div className="overflow-hidden relative w-full">
-                    <div className="w-full h-full pt-2 px-2 lg:pt-4 lg:px-4 pb-0  rounded-t-2xl lg:rounded-t-3xl bg-slate-700 dark:border-neutral-700 ml-6 mt-2">
-                      <Image
-                        width={800}
-                        height={800}
-                        src={"/assets/img/illustration/services-1-rev.png"}
-                        alt="website-design"
-                        className="w-full h-full lg:h-auto lg:object-cover"
-                      />
-                    </div>
-                  </div>
-                </motion.div>
-                {/* <motion.div
-                  initial={{ x: 40, opacity: 0 }}
+                  initial={{ x: 0, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
                   viewport={{ once: false, amount: 0.2 }}
@@ -73,7 +51,7 @@ const FeatureContent = () => {
                       />
                     </div>
                   </div>
-                </motion.div> */}
+                </motion.div>
               </div>
               <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-gray-200 bg-gradient-to-t from-indigo-200 to-white transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none">
                 <div className="flex flex-col space-y-2 h-auto lg:h-40 p-4">
@@ -84,7 +62,13 @@ const FeatureContent = () => {
                     Buat tampilan aplikasi mobile anda lebih user friendly
                   </p>
                 </div>
-                <div className="overflow-hidden relative w-full">
+                <motion.div
+                  initial={{ y: 0, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
+                  viewport={{ once: false, amount: 0.2 }}
+                  className="overflow-hidden relative w-full"
+                >
                   <div className="flex w-full mb-0 justify-center">
                     <Image
                       width={800}
@@ -94,7 +78,7 @@ const FeatureContent = () => {
                       className="w-50 lg:w-70  object-cover "
                     />
                   </div>
-                </div>
+                </motion.div>
               </div>
 
               <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-neutral-200 bg-gradient-to-t from-indigo-200 to-white transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none">
@@ -107,7 +91,12 @@ const FeatureContent = () => {
                     pencari untuk menjangkau audiens yang tepat.
                   </p>
                 </div>
-                <div className="overflow-hidden relative w-full h-full">
+                <motion.div
+                  initial={{ y: 0, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
+                  viewport={{ once: false, amount: 0.2 }}
+                >
                   <div className="flex w-full justify-center">
                     <Image
                       width={800}
@@ -117,8 +106,9 @@ const FeatureContent = () => {
                       className="w-50 lg:w-55 object-cover "
                     />
                   </div>
-                </div>
+                </motion.div>
               </div>
+
               <div className="lg:col-span-2 group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl bg-gradient-to-tl from-indigo-500 to-indigo-800 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none">
                 <div className="flex flex-col space-y-2  h-auto lg:h-40 p-4">
                   <h3 className="text-lg lg:text-2xl font-semibold text-white ">
@@ -129,17 +119,25 @@ const FeatureContent = () => {
                     membangun website anda dengan fitur yang high end
                   </p>
                 </div>
-                <div className="overflow-hidden relative w-full">
-                  <div className="w-full h-full  rounded-t-3xl bg-slate-700 dark:bg-slate-700 dark:border-neutral-700 ml-6 mt-2">
-                    <Image
-                      width={800}
-                      height={800}
-                      src={"/assets/img/illustration/services-4.png"}
-                      alt="website-design"
-                      className="w-full h-full lg:h-auto lg:object-cover"
-                    />
+                <motion.div
+                  initial={{ x: 0, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
+                  viewport={{ once: false, amount: 0.2 }}
+                  className="overflow-hidden relative w-full"
+                >
+                  <div className="overflow-hidden relative w-full">
+                    <div className="w-full h-full  rounded-t-3xl bg-slate-700 dark:bg-slate-700 dark:border-neutral-700 ml-6 mt-2">
+                      <Image
+                        width={800}
+                        height={800}
+                        src={"/assets/img/illustration/services-4.png"}
+                        alt="website-design"
+                        className="w-full h-full lg:h-auto lg:object-cover"
+                      />
+                    </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
