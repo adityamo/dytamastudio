@@ -21,7 +21,7 @@ const FlippingWords = ({ words, color }: Props) => {
   return (
     <div className="relative flex w-full h-[3rem] lg:h-[2rem]">
       <AnimatePresence mode="wait">
-        <motion.span
+        <motion.h1
           key={words[currentWordIndex]}
           initial={{ opacity: 0, y: 40, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -31,7 +31,7 @@ const FlippingWords = ({ words, color }: Props) => {
                      lg:leading-[1.2] text-center ${color !== "" ? color : "bg-gradient-to-b from-sky-800 dark:from-sky-100 to-foreground dark:to-foreground bg-clip-text text-transparent"}`}
         >
           {words[currentWordIndex]}
-        </motion.span>
+        </motion.h1>
       </AnimatePresence>
     </div>
   );

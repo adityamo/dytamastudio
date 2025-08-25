@@ -6,6 +6,7 @@ import FlippingWords from "@/components/flippingwords";
 import Image from "next/image";
 
 const words = [
+  "Aditya Septama",
   "Web Developers",
   "UI/UX Designer",
   "Product Designer",

@@ -4,6 +4,8 @@ import Container from "@/components/container";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Chip } from "@heroui/react";
+import Link from "next/link";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const AboutContent = () => {
   return (
@@ -64,10 +66,10 @@ const AboutContent = () => {
               </motion.div>
 
               <div className="flex flex-col space-y-1 p-4 lg:mt-10">
-                <h4 className="text-xl lg:text-2xl font-semibold">
+                <h4 className="text-xl lg:text-2xl font-semibold text-black">
                   Our Laboratorium
                 </h4>
-                <p className="text-gray-500 text-sm font-normal">
+                <p className="text-gray-600 text-sm font-normal">
                   Dytama adalah laboratorium kecil saya untuk membangun hal-hal
                   digital Berdiri sebagai gabungan antara frontend engineering
                   dan desain digital kreatif
@@ -85,10 +87,10 @@ const AboutContent = () => {
                 />
 
                 <div className="flex flex-col space-y-1 px-4 py-0">
-                  <h4 className="text-xl lg:text-xl font-semibold">
+                  <h4 className="text-xl lg:text-xl font-semibold text-black">
                     Product Design
                   </h4>
-                  <p className="text-gray-500 text-xs font-normal">
+                  <p className="text-gray-600 text-xs font-normal">
                     Mulai kolaborasi dan buat product digitalmu
                   </p>
                   <div className="flex flex-row gap-2 pt-2">
@@ -96,7 +98,7 @@ const AboutContent = () => {
                       variant="bordered"
                       className="bg-white text-black border border-gray-200 rounded-md text-xs font-bold"
                     >
-                      Product
+                      Website
                     </Chip>
                     <Chip
                       variant="bordered"
@@ -110,12 +112,18 @@ const AboutContent = () => {
                     >
                       UX
                     </Chip>
+                    <Chip
+                      variant="bordered"
+                      className="bg-white text-black border border-gray-200 rounded-md text-xs font-bold"
+                    >
+                      Digital Product
+                    </Chip>
                   </div>
                 </div>
               </div>
               <div className="bg-secondary border border-gray-200 rounded-xl">
                 <div className="flex flex-row w-full justify-center space-y-2">
-                  <div className="flex flex-col  max-w-lg text-center justify-center items-center">
+                  <div className="flex flex-col max-w-lg text-center justify-center items-center">
                     <Image
                       width={100}
                       height={100}
@@ -126,18 +134,19 @@ const AboutContent = () => {
 
                     <div className="relative px-2 py-4 space-y-3">
                       <h4 className="text-black text-lg lg:text-xl font-bold w-60">
-                        Mau Kolaborasi Bersama Dytama ?
+                        Kenal Lebih Dekat dengan
+                        <span className="text-primary ms-2 me-2">Dytama</span>
                       </h4>
-                      <button
-                        type="button"
-                        className="py-2 px-3 inline-flex items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-indigo-800 focus:outline-hidden focus:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none"
+                      <Link
+                        href="/about/aditya-septama"
+                        className="py-2 px-3 inline-flex items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-indigo-900 focus:outline-hidden focus:bg-indigo-900 disabled:opacity-50 disabled:pointer-events-none"
                       >
-                        Connect
-                      </button>
+                        Lihat Profile <FiArrowUpRight className="" />
+                      </Link>
                     </div>
                   </div>
                 </div>
-                <div className="absolute bottom-0 end-0">
+                <div className="absolute bottom-0 end-0 pointer-events-none">
                   <Image
                     width={400}
                     height={400}

@@ -29,3 +29,7 @@ body {
     --border: #202020;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
