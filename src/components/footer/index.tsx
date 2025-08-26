@@ -1,21 +1,64 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Image from "next/image";
+import { siteConfig } from "@/config/site";
+import Link from "next/link";
 
 const FooterLanding = () => {
   return (
     <footer className="bg-white lg:grid lg:grid-cols-5">
-      <div className="relative block h-32 lg:col-span-2 lg:h-full">
-        <img
-          src="/assets/img/illustration/card-footer.svg"
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+      <div className="relative bg-[url(/assets/img/illustration/card-footer-2.svg)] bg-no-repeat bg-center bg-cover block h-auto lg:col-span-2 lg:h-full">
+        <div className="flex flex-col  space-y-5 py-5 px-15 lg:mt-10">
+          <Image
+            src={"/assets/img/brand/dytama-icon.svg"}
+            width={300}
+            height={300}
+            alt="dytama-icon"
+            className="h-8 w-8 lg:h-15 lg:w-15"
+          />
+          <h1 className="text-3xl lg:text-5xl font-bold text-white">
+            Creative
+          </h1>
+          <h1 className="text-3xl lg:text-5xl font-bold text-white">
+            Realiable
+          </h1>
+          <h1 className="text-3xl lg:text-5xl font-bold text-white">
+            Inovative
+          </h1>
+        </div>
+        <div className="lg:bottom-1 flex flex-col space-y-4 px-15 pb-5 lg:pb-0">
+          <p className="text-white text-sm font-normal">Catch me</p>
+          <div className="inline-flex items-center gap-4">
+            <Image
+              src={"/assets/img/photo/aditya-septama-clean.png"}
+              width={300}
+              height={300}
+              alt="dytama-icon"
+              className="h-10 w-10"
+            />
+            <h6 className="text-white text-lg font-semibold">Aditya Septama</h6>
+          </div>
+        </div>
       </div>
 
       <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8 bg-gray-100">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           <div>
-            <p>
+            <Image
+              src={"/assets/img/brand/dytama-black.svg"}
+              width={300}
+              height={300}
+              alt="dytama-icon"
+              className="h-auto w-10 lg:h-auto lg:w-50"
+            />
+            <p className="text-sm font-gray-500 font-normal text-start pt-5 ">
+              Dytama adalah studio kreatif yang berfokus pada pengembangan
+              solusi digital mulai dari desain UI/UX, pengembangan website
+              modern, hingga pembuatan produk digital siap pakai. Kami
+              menggabungkan kreativitas dan teknologi untuk membantu brand
+              tumbuh di era digital.
+            </p>
+            {/* <p>
               <span className="text-xs tracking-wide text-gray-500 uppercase">
                 {" "}
                 Hubungi saya{" "}
@@ -27,7 +70,7 @@ const FooterLanding = () => {
               >
                 +62 8788 8362 186
               </a>
-            </p>
+            </p> */}
 
             <ul className="mt-8 space-y-1 text-sm text-gray-700">
               <li>Monday to Friday: 8pm - 12pm</li>
@@ -37,7 +80,7 @@ const FooterLanding = () => {
             <ul className="mt-8 flex gap-6">
               <li>
                 <a
-                  href="#"
+                  href={siteConfig.links.facebook}
                   rel="noreferrer"
                   target="_blank"
                   className="text-gray-700 transition hover:opacity-75"
@@ -61,7 +104,7 @@ const FooterLanding = () => {
 
               <li>
                 <a
-                  href="#"
+                  href={siteConfig.links.instagram}
                   rel="noreferrer"
                   target="_blank"
                   className="text-gray-700 transition hover:opacity-75"
@@ -85,7 +128,7 @@ const FooterLanding = () => {
 
               <li>
                 <a
-                  href="#"
+                  href={siteConfig.links.twitter}
                   rel="noreferrer"
                   target="_blank"
                   className="text-gray-700 transition hover:opacity-75"
@@ -105,7 +148,7 @@ const FooterLanding = () => {
 
               <li>
                 <a
-                  href="#"
+                  href={siteConfig.links.github}
                   rel="noreferrer"
                   target="_blank"
                   className="text-gray-700 transition hover:opacity-75"
@@ -129,7 +172,7 @@ const FooterLanding = () => {
 
               <li>
                 <a
-                  href="#"
+                  href={siteConfig.links.dribbble}
                   rel="noreferrer"
                   target="_blank"
                   className="text-gray-700 transition hover:opacity-75"
@@ -157,49 +200,18 @@ const FooterLanding = () => {
             <div>
               <p className="font-medium text-gray-900">Services</p>
 
-              <ul className="mt-6 space-y-4 text-sm">
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    Home
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    Product
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    Portofolio
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    How we work
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  ></a>
-                </li>
+              <ul className="mt-6 space-y-4 text-sm flex flex-col">
+                {siteConfig.navItems.map((item, key: React.Key) => {
+                  return (
+                    <Link
+                      href={siteConfig.navItems[0].href}
+                      className="text-gray-700 transition hover:opacity-75"
+                      key={key}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                })}
               </ul>
             </div>
 
@@ -208,23 +220,20 @@ const FooterLanding = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href={"/about"}
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    {" "}
-                    About{" "}
-                  </a>
+                    About
+                  </Link>
                 </li>
-
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href={"/about"}
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    {" "}
                     Meet the creator
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -266,7 +275,7 @@ const FooterLanding = () => {
             </ul>
 
             <p className="mt-8 text-xs text-gray-500 sm:mt-0">
-              &copy; 2022. Company Name. All rights reserved.
+              &copy; 2025. Dytama. All rights reserved.
             </p>
           </div>
         </div>

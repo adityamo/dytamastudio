@@ -15,6 +15,9 @@ const ProductList = () => {
       <Container>
         <div className="flex flex-col w-full justify-center">
           <div className="flex flex-col space-y-2 text-center">
+            <p className="text-sm font-semibold text-primary dark:text-gray-50">
+              Our Product
+            </p>
             <h3 className="text-3xl text-slate-700 dark:text-white font-semibold">
               Digital Product
             </h3>

@@ -5,7 +5,8 @@ import Container from "@/components/container";
 import { Button } from "@heroui/react";
 import Image from "next/image";
 import { LuShieldCheck } from "react-icons/lu";
-import { ContainerScroll } from "@/components/containerscroll";
+// import { ContainerScroll } from "@/components/containerscroll";
+import { FiArrowRight } from "react-icons/fi";
 
 const words = [
   "Bangun kreatifitasmu",
@@ -35,7 +36,7 @@ const FlippingWords: React.FC = () => {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: -40, scale: 0.98 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
-          className="absolute text-2xl lg:text-5xl font-semibold tracking-tight 
+          className="absolute text-3xl lg:text-5xl font-semibold tracking-tight 
                      lg:leading-[1.2] text-center bg-gradient-to-b 
                      from-sky-800 dark:from-sky-100 to-foreground dark:to-foreground 
                      bg-clip-text text-transparent"
@@ -48,6 +49,13 @@ const FlippingWords: React.FC = () => {
 };
 
 export default function Hero() {
+  const handleToContact = () => {
+    window.open(
+      "https://wa.me/087888362186?text=Halo%20saya%20tertarik%20dengan%20layanan%20Anda",
+      "_blank"
+    );
+  };
+
   return (
     <section
       className="-mt-25 lg:-mt-16 relative w-full  bg-gradient-to-t from-indigo-200  to-white dark:from-slate-900 dark:to-slate-800"
@@ -74,7 +82,7 @@ export default function Hero() {
             </div>
             <FlippingWords />
 
-            <h1 className="text-2xl lg:text-5xl font-semibold tracking-tight lg:leading-[1.2] text-center lg:antialiased bg-gradient-to-b from-sky-800 dark:from-sky-100 to-foreground dark:to-foreground bg-clip-text text-transparent">
+            <h1 className="text-3xl lg:text-5xl font-semibold tracking-tight lg:leading-[1.2] text-center lg:antialiased bg-gradient-to-b from-sky-800 dark:from-sky-100 to-foreground dark:to-foreground bg-clip-text text-transparent">
               bersama{" "}
               <span className="antialiased bg-gradient-to-r from-indigo-500 dark:from-indigo-400 to-indigo-800 dark:to-indigo-600 bg-clip-text text-transparent">
                 Dytama
@@ -86,26 +94,30 @@ export default function Hero() {
               karya yang saya banggakan, dan berbagai produk digital yang siap
               menunjang produktivitas dan kreativitasmu.
             </p>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0"
-            >
-              <div className="mt-2 flex space-x-4">
+
+            <div className="mt-2 flex space-x-4">
+              <motion.div whileHover={{ scale: 1.05 }}>
                 <Button
-                  className="bg-secondary hover:bg-lime-200 text-black font-semibold dark:shadow-none shadow-md light:shadow-slate-200"
+                  className="inline-flex bg-secondary hover:bg-lime-200 text-black font-semibold dark:shadow-none shadow-md light:shadow-slate-200"
                   color="primary"
+                  onPress={() => {
+                    handleToContact();
+                  }}
                 >
-                  Lihat Portofolio
+                  Lets,s Work Together
+                  <FiArrowRight />
                 </Button>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }}>
                 <Button
                   className="bg-indigo-600 dark:shadow-none light:shadow-indigo-100"
                   color="primary"
                   variant="shadow"
                 >
-                  Jelajahi Produk
+                  Portofolio
                 </Button>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </motion.div>
         </Container>
         <div className="hidden lg:block absolute top-60 start-20">
@@ -124,7 +136,7 @@ export default function Hero() {
             alt="side-left-dytama"
           />
         </div>
-        <motion.div
+        {/* <motion.div
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
@@ -140,9 +152,9 @@ export default function Hero() {
               priority
             />
           </ContainerScroll>
-        </motion.div>
+        </motion.div> */}
 
-        {/* <motion.div
+        <motion.div
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
@@ -156,7 +168,7 @@ export default function Hero() {
             className="mx-auto"
             priority
           />
-        </motion.div> */}
+        </motion.div>
       </div>
     </section>
   );

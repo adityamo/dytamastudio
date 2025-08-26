@@ -1,10 +1,11 @@
 "use client";
 
 import React, { ReactNode, useEffect, useState } from "react";
-import NavbarLanding from "@/components/navbar";
+// import NavbarLanding from "@/components/navbar";
 import { HeroUIProvider } from "@heroui/react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import FooterLanding from "../footer";
+import NavbarLanding2 from "../navbar2";
 
 type Props = {
   children: ReactNode;
@@ -27,7 +28,8 @@ export default function PublicLayout({ children }: Props) {
         disableTransitionOnChange
       >
         <main className="flex-1 content" id="app-container">
-          <NavbarLanding />
+          <NavbarLanding2 />
+          {/* <NavbarLanding /> */}
           {children}
           <FooterLanding />
         </main>
