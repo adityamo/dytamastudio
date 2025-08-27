@@ -12,7 +12,10 @@ const HowWeWorkContent = () => {
       <div className="bg-[url('/assets/img/background/background-pattern-1.svg')] bg-no-repeat bg-center bg-cover">
         <Container>
           <div className="relative w-full py-10">
-            <div className="relative w-full space-y-2 text-center justify-center pb-10">
+            <div className="relative w-full space-y-2 text-center justify-center pb-5">
+              <p className="text-sm font-semibold text-primary dark:text-secondary">
+                How we work
+              </p>
               <h4 className="text-black text-2xl lg:text-4xl font-bold dark:text-black">
                 Proses Kerja <span className="text-primary">Dytama</span>
               </h4>

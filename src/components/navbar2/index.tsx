@@ -18,6 +18,13 @@ import ThemeSwitcher from "../themeswitcher";
 const NavbarLanding2 = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const handleToContact = () => {
+    window.open(
+      "https://wa.me/087888362186?text=Halo%20saya%20tertarik%20dengan%20layanan%20Anda",
+      "_blank"
+    );
+  };
+
   return (
     <div className="relative w-full">
       <Navbar>
@@ -26,7 +33,10 @@ const NavbarLanding2 = () => {
           <NavItems items={siteConfig.navItems} />
           <div className="flex items-center gap-4">
             <ThemeSwitcher />
-            <NavbarButton className="bg-secondary rounded-full">
+            <NavbarButton
+              onClick={handleToContact}
+              className="bg-secondary rounded-full"
+            >
               Contact
             </NavbarButton>
           </div>

@@ -6,7 +6,7 @@ import technologyList from "@/data/tecnology.json";
 
 const TechnologyMe = () => {
   return (
-    <section className="pt-14 lg:pt-28 relative w-full bg-white dark:bg-slate-800">
+    <section className="pt-14 lg:pt-28 relative w-full bg-white dark:bg-slate-900">
       <Container>
         <div className="flex w-full justify-center">
           <div className="flex flex-col space-y-4 text-center">

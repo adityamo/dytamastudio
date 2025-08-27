@@ -15,13 +15,13 @@ const ProductList = () => {
       <Container>
         <div className="flex flex-col w-full justify-center">
           <div className="flex flex-col space-y-2 text-center">
-            <p className="text-sm font-semibold text-primary dark:text-gray-50">
+            <p className="text-sm font-semibold text-primary dark:text-secondary">
               Our Product
             </p>
-            <h3 className="text-3xl text-slate-700 dark:text-white font-semibold">
+            <h3 className="text-3xl lg:text-4xl text-slate-700 dark:text-white font-bold">
               Digital Product
             </h3>
-            <p className="text-sm font-normal text-gray-500 dark:text-gray-50">
+            <p className="text-sm font-normal text-gray-500 dark:text-neutral-400">
               Dytama memiliki salah satu product digital yang siap pakai, untuk
               informasi selengkapnya silahkan lihat card dibawah ini
             </p>
