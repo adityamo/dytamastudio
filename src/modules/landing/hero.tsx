@@ -36,7 +36,7 @@ const FlippingWords: React.FC = () => {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: -40, scale: 0.98 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
-          className="absolute text-3xl lg:text-5xl font-semibold tracking-tight 
+          className="absolute text-3xl lg:text-6xl font-semibold tracking-tight 
                      lg:leading-[1.2] text-center bg-gradient-to-b 
                      from-sky-800 dark:from-sky-100 to-foreground dark:to-foreground 
                      bg-clip-text text-transparent"
@@ -70,25 +70,28 @@ export default function Hero() {
               opacity: 1,
             }}
             transition={{ duration: 0.6, type: "spring", bounce: 0 }}
-            className="h-full flex flex-col justify-center items-center space-y-3 max-w-6xl mx-auto text-center"
+            className="h-full flex flex-col justify-center items-center max-w-6xl mx-auto text-center space-y-2"
           >
-            <div className="flex flex-row items-center px-5 py-1.5 bg-indigo-100 dark:bg-slate-700 rounded-full mb-5">
-              <span className="bg-white dark:bg-lime-50 rounded-full items-center justify-center p-1 me-2">
-                <LuShieldCheck className="text-secondary text-xs" />
-              </span>
-              <p className="text-primary dark:text-secondary text-xs font-semibold">
-                IT Solution dan Digital Product
-              </p>
+            <div className="pt-10">
+              <div className="flex flex-row items-center px-5 py-1.5 bg-indigo-100 dark:bg-slate-700 rounded-full mb-0 lg:mb-4">
+                <span className="bg-white dark:bg-lime-50 rounded-full items-center justify-center p-1 me-2">
+                  <LuShieldCheck className="text-lime-500 text-xs" />
+                </span>
+                <p className="text-primary dark:text-secondary text-xs font-semibold">
+                  IT Solution dan Digital Product
+                </p>
+              </div>
             </div>
+
             <FlippingWords />
 
-            <h1 className="text-3xl lg:text-5xl font-semibold tracking-tight lg:leading-[1.2] text-center lg:antialiased bg-gradient-to-b from-sky-800 dark:from-sky-100 to-foreground dark:to-foreground bg-clip-text text-transparent">
+            <h1 className="text-3xl lg:text-6xl font-semibold tracking-tight lg:leading-[1.2] text-center lg:antialiased bg-gradient-to-b from-sky-800 dark:from-sky-100 to-foreground dark:to-foreground bg-clip-text text-transparent">
               bersama{" "}
               <span className="antialiased bg-gradient-to-r from-indigo-500 dark:from-indigo-400 to-indigo-800 dark:to-indigo-600 bg-clip-text text-transparent">
                 Dytama
               </span>
             </h1>
-            <p className="max-w-4xl text-xs lg:text-sm mx-auto text-muted-foreground text-balance dark:text-white">
+            <p className="max-w-4xl text-xs lg:text-sm mx-auto text-muted-foreground text-balance dark:text-white py-2">
               Selamat datang di Dytama – tempat di mana ide kreatif, desain
               digital, dan portofolio profesional bersatu. Temukan siapa saya,
               karya yang saya banggakan, dan berbagai produk digital yang siap

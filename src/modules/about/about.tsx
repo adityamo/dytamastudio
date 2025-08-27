@@ -141,7 +141,7 @@ const AboutContent = () => {
                         href="/about/aditya-septama"
                         className="py-2 px-3 inline-flex items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-indigo-900 focus:outline-hidden focus:bg-indigo-900 disabled:opacity-50 disabled:pointer-events-none"
                       >
-                        Lihat Profile <FiArrowUpRight className="" />
+                        Hubungi <FiArrowUpRight className="" />
                       </Link>
                     </div>
                   </div>

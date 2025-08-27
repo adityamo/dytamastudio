@@ -4,7 +4,7 @@ import carrierHistory from "@/data/carrier.json";
 
 const CarrierHistory = () => {
   return (
-    <section className="pt-14  lg:pt-28 relative w-full  bg-white dark:bg-slate-800">
+    <section className="pt-14  lg:pt-28 relative w-full  bg-white dark:bg-slate-900">
       <Container>
         <div className="relative w-full">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">

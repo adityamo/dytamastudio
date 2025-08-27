@@ -70,8 +70,9 @@ export const siteConfig = {
   },
   navItems: [
     { label: "Home", href: "/", haveChild: false },
-    { label: "Product", href: "#ProductList", haveChild: false },
-    { label: "About", href: "/about", haveChild: false },
-    { label: "Contact", href: "/contact", haveChild: false },
+    { label: "Product", href: "/#ProductList", haveChild: false },
+    { label: "Portofolio", href: "/portofolio", haveChild: false },
+    { label: "About", href: "/about/aditya-septama", haveChild: false },
+    // { label: "Contact", href: "/contact", haveChild: false },
   ],
 };

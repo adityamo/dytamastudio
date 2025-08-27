@@ -9,7 +9,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${SITE_URL}/`,
       lastModified: now,
-      changeFrequency: "yearly",
+      changeFrequency: "daily",
+      priority: 1,
+    },
+    {
+      url: `${SITE_URL}/about/aditya-septama`,
+      lastModified: now,
+      changeFrequency: "daily",
       priority: 1,
     },
   ];

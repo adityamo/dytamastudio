@@ -7,13 +7,13 @@ import { motion } from "framer-motion";
 const FeatureContent = () => {
   return (
     <section
-      className="relative w-full bg-white dark:bg-slate-900"
+      className="relative w-full bg-white dark:bg-slate-900 pt-5 lg:pt-10"
       id="featureDytama"
     >
       <Container className="py-10">
         <div className="relative w-full">
           <div className="flex flex-col space-y-2 text-center justify-center">
-            <p className="text-sm font-semibold text-primary dark:text-gray-50">
+            <p className="text-sm font-semibold text-primary dark:text-secondary">
               Services
             </p>
             <h4 className="text-black text-2xl lg:text-4xl font-bold dark:text-white">

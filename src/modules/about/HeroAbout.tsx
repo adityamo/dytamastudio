@@ -16,7 +16,7 @@ const words = [
 const HeroAbout = () => {
   return (
     <section className='"mt-14  lg:-mt-16 relative w-full  bg-gradient-to-t from-white  to-white dark:from-slate-900 dark:to-slate-800'>
-      <div className="  bg-white dark:bg-slate-800 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
+      <div className="">
         <Container className="py-36">
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -29,9 +29,9 @@ const HeroAbout = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full lg:items-center">
               <div className="order-2 lg:order-1 relative items-start space-y-2 ">
                 <p className="text-primary dark:text-secondary text-xs lg:text-sm font-medium">
-                  PROFILE SAYA
+                  Profile Saya
                 </p>
-                <h1 className="text-4xl lg:text-5xl font-bold tracking-tight lg:leading-[1.2] text-black dark:text-white">
+                <h1 className="text-4xl lg:text-6xl font-bold tracking-tight lg:leading-[1.2] text-black dark:text-white">
                   Hello folks, I&apos;m
                 </h1>
                 <FlippingWords
