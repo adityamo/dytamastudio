@@ -8,6 +8,7 @@ import HowWeWorkContent from "@/modules/landing/howwework";
 // import WorkingTogetherContent from "@/modules/landing/workingtogether";
 import TechnologyContent from "@/modules/landing/technology";
 import FqaContent from "@/modules/landing/fqa";
+import WhyChooseUs from "@/modules/landing/whychooseus";
 
 export default async function LandingPage() {
   return (
@@ -17,6 +18,7 @@ export default async function LandingPage() {
       <ProductList />
       {/* <AboutContent /> */}
       <PortofolioContent />
+      <WhyChooseUs />
       <HowWeWorkContent />
       <FqaContent />
       {/* <WorkingTogetherContent /> */}

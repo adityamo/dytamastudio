@@ -62,63 +62,18 @@ const PortofolioContent = () => {
                 </div>
               );
             })}
-
-            {/* {portofolioList.map((item, key: React.Key) => {
-              return (
-                <Card
-                  key={key}
-                  isPressable
-                  shadow="sm"
-                  onPress={() => console.log("item pressed")}
-                  className="relative rounded-2xl shadow-xl backdrop-blur-3xl overflow-hidden"
-                >
-                  <CardBody className="relative overflow-visible p-0">
-                    <Image
-                      alt={item.name}
-                      className="w-full object-cover h-[180px] lg:h-[240px]"
-                      radius="lg"
-                      shadow="sm"
-                      src={item.imgUrl}
-                      width="100%"
-                    />
-                    <div className="relative w-full pt-5 px-4">
-                      <div className="flex flex-col space-y-2 w-full justify-start text-start">
-                        <h5 className="text-base lg:text-xl font-semibold ">
-                          {item.name}
-                        </h5>
-                        <p className="text-default-500 text-sm line-clamp-2">
-                          {item.desc}
-                        </p>
-                        <div className="">
-                          <Link
-                            href={""}
-                            className="pt-2 text-xs lg:text=sm text-primary flex w-full font-semibold items-center"
-                          >
-                            Lihat Selengkapnya{" "}
-                            <span className="ms-2">
-                              <FiArrowRight />
-                            </span>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </CardBody>
-                  <CardFooter></CardFooter>
-                </Card>
-              );
-            })} */}
           </div>
           <div className="flex w-full justify-center pt-10">
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0"
             >
-              <button
-                type="button"
+              <Link
+                href={"/portofolio"}
                 className="py-3 px-4 inline-flex font-semibold items-center gap-x-2 text-sm rounded-full border border-transparent bg-secondary text-black hover:bg-lime-500 focus:outline-hidden focus:bg-lime-500 disabled:opacity-50 disabled:pointer-events-none"
               >
                 Lihat lainnya <FiArrowDown className="" />
-              </button>
+              </Link>
             </motion.div>
           </div>
         </div>
