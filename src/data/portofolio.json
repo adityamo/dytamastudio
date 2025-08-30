@@ -1,23 +1,101 @@
 [
   {
+    "id": "DYT0001",
+    "slug": "hris-lentera",
     "name": "HRIS Lentera",
-    "desc": "Lentera adalah salah satu platform digitial yang berfokus pada Human Resource Information System, lentera menyediakan platform website yang digunakan sebagai admin untuk mengelola management karyawan, sedangkan mobile apps digunakan karyawan terkait, lentera memiliki feature pencatatan absensi, lembur, form izin, dan reinbursment",
     "type": "Website",
-    "develope": ["Figma", "Nextjs", "NodeJs", "React", "PHP", "Laravel"],
-    "imgUrl": "/assets/img/project/HRIS.png"
+    "category": "Web Application Development",
+    "duration": "3 Bulan",
+    "client": "Apoda Technology",
+    "develope": ["Figma", "Next.js", "Node.js", "React", "PHP", "Laravel"],
+    "overview_description": "Lentera adalah platform Human Resource Information System (HRIS) berbasis website dan mobile yang membantu perusahaan mengelola manajemen karyawan secara digital. Melalui website admin, HR dan manajemen dapat mengatur data karyawan, absensi, lembur, izin, dan reimbursement dengan lebih mudah. Sementara itu, aplikasi mobile memungkinkan karyawan mencatat kehadiran, mengajukan izin, lembur, serta melakukan klaim reimbursement kapan saja dan di mana saja. Lentera meningkatkan efisiensi, transparansi, dan akurasi proses HR di perusahaan modern.",
+    "the_challenge": [
+      "Proses HR manual memakan waktu dan sering menimbulkan kesalahan pencatatan.",
+      "Kurangnya transparansi dalam proses izin, lembur, dan reimbursement.",
+      "Data karyawan tersebar di berbagai platform dan sulit diakses secara real-time.",
+      "Lambatnya pengambilan keputusan karena tidak adanya sistem pelaporan HR terintegrasi."
+    ],
+    "the_solution": [
+      "Menghadirkan sistem HRIS terintegrasi berbasis web dan mobile.",
+      "Menyediakan fitur absensi online, pengajuan izin, lembur, dan reimbursement otomatis terdokumentasi.",
+      "Memberikan transparansi penuh dengan data real-time untuk karyawan dan manajemen.",
+      "Menyediakan dashboard analitik untuk mempercepat pengambilan keputusan strategis."
+    ],
+    "features": [
+      "Absensi online dengan lokasi dan waktu real-time",
+      "Pengajuan izin & cuti digital",
+      "Manajemen lembur otomatis",
+      "Reimbursement berbasis bukti digital",
+      "Dashboard analitik HR"
+    ],
+    "imgUrl": "/assets/img/project/HRIS.png",
+    "meta_description": "HRIS Lentera adalah platform manajemen karyawan digital berbasis web & mobile dengan fitur absensi, izin, lembur, dan reimbursement untuk perusahaan modern.",
+    "project_year": "2024",
+    "project_link": "https://hris-lentera.example.com"
   },
   {
+    "id": "DYT0002",
+    "slug": "silink",
     "name": "SILINK",
-    "desc": "Silink digunakan sebagai website yang digunakan customer Seino Indomobil Logistics untuk melakukan pemesanan dan perencanaan pengiriman, silink membantu dari Seino Indomobil Logistics dan juga customer sehingga mudah untuk booking pengiriman kapan pun dan dimanapun",
     "type": "Website",
-    "develope": ["Figma", "Nextjs", "NodeJs", "React", "PHP", "Laravel"],
-    "imgUrl": "/assets/img/project/Silink-cover.png"
+    "category": "Web Application Development",
+    "duration": "3 Bulan",
+    "client": "PT Seino Indomobil Logistics",
+    "develope": ["Figma", "Next.js", "Node.js", "React", "PHP", "Laravel"],
+    "overview_description": "Silink adalah platform pemesanan dan perencanaan pengiriman berbasis web yang dikembangkan untuk Seino Indomobil Logistics. Dengan Silink, pelanggan dapat melakukan booking pengiriman barang secara online kapan saja dan di mana saja. Platform ini mempermudah koordinasi antara Seino Indomobil Logistics dan customer dalam proses pengiriman, perencanaan rute, serta pelacakan status pesanan secara real-time.",
+    "the_challenge": [
+      "Kesulitan pelanggan dalam memesan pengiriman melalui proses manual.",
+      "Kurangnya transparansi status pengiriman antara perusahaan dan pelanggan.",
+      "Lambatnya konfirmasi dan perencanaan pengiriman karena tidak adanya sistem terpusat."
+    ],
+    "the_solution": [
+      "Menyediakan website pemesanan pengiriman yang user-friendly.",
+      "Fitur perencanaan pengiriman, pelacakan status, dan konfirmasi online.",
+      "Meningkatkan efisiensi komunikasi antara perusahaan dan pelanggan."
+    ],
+    "features": [
+      "Booking pengiriman online 24/7",
+      "Pelacakan status real-time",
+      "Perencanaan rute pengiriman",
+      "Notifikasi otomatis kepada pelanggan",
+      "Integrasi dengan sistem logistik internal"
+    ],
+    "imgUrl": "/assets/img/project/Silink-cover.png",
+    "meta_description": "SILINK adalah platform booking pengiriman online Seino Indomobil Logistics dengan fitur tracking real-time dan perencanaan rute yang efisien.",
+    "project_year": "2024",
+    "project_link": "https://silink.example.com"
   },
   {
+    "id": "DYT0003",
+    "slug": "sttc-logistics",
     "name": "STTC Logistics",
-    "desc": "Seino Traffic Truck Control adalah aplikasi internal dari seino indomobil logistic yang digunakan sebagai sistem internal untuk memantau dan memonitoring pengiriman, tracking, pelacakan pengiriman, approve surat jalan, dan lain-lain.",
     "type": "Website",
-    "develope": ["Figma", "Nextjs", "NodeJs", "React", "PHP", "Laravel"],
-    "imgUrl": "/assets/img/project/fullpageSTTC.png"
+    "category": "Web Application Development",
+    "duration": "5 Bulan",
+    "client": "PT Seino Indomobil",
+    "develope": ["Figma", "Next.js", "Node.js", "React", "PHP", "Laravel"],
+    "overview_description": "Seino Traffic Truck Control (STTC) adalah aplikasi internal berbasis web untuk Seino Indomobil Logistics yang digunakan dalam pemantauan pengiriman, pelacakan armada, persetujuan surat jalan, dan optimalisasi distribusi. Aplikasi ini mendigitalisasi proses monitoring logistik sehingga lebih cepat, akurat, dan transparan.",
+    "the_challenge": [
+      "Sulit memantau pengiriman secara manual.",
+      "Persetujuan dokumen sering tertunda karena proses manual.",
+      "Kurangnya integrasi data antara armada, gudang, dan pusat distribusi."
+    ],
+    "the_solution": [
+      "Menyediakan sistem pemantauan pengiriman real-time berbasis web.",
+      "Mempermudah persetujuan surat jalan secara digital.",
+      "Mengintegrasikan data logistik untuk efisiensi operasional."
+    ],
+    "features": [
+      "Monitoring armada secara real-time",
+      "Persetujuan surat jalan digital",
+      "Integrasi dengan gudang & pusat distribusi",
+      "Laporan logistik otomatis",
+      "Notifikasi status pengiriman"
+    ],
+
+    "imgUrl": "/assets/img/project/fullpageSTTC.png",
+    "meta_description": "STTC Logistics adalah aplikasi internal Seino Indomobil Logistics untuk monitoring pengiriman dan persetujuan surat jalan secara digital.",
+    "project_year": "2024",
+    "project_link": "https://sttc-logistics.example.com"
   }
 ]

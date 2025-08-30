@@ -1,7 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
+import { handleToContact } from "@/helpers/globalHelper";
 
 const PortofolioContact = () => {
   return (
@@ -21,12 +22,13 @@ const PortofolioContact = () => {
               Kenal Lebih Dekat dengan
               <span className="text-primary ms-2 me-2">Dytama</span>
             </h4>
-            <Link
-              href="/about/aditya-septama"
+            <button
+              type="button"
+              onClick={handleToContact}
               className="py-2 px-3 inline-flex items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-primary text-white hover:bg-indigo-900 focus:outline-hidden focus:bg-indigo-900 disabled:opacity-50 disabled:pointer-events-none"
             >
               Hubungi <FiArrowUpRight className="" />
-            </Link>
+            </button>
           </div>
         </div>
       </div>
