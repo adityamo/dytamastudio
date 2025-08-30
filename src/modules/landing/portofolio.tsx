@@ -29,10 +29,10 @@ const PortofolioContent = () => {
         </div>
         <div className="relative w-full py-5 lg:py-7">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 py-5 lg:py-10">
-            {portofolioList.map((item, key: React.Key) => {
+            {portofolioList.slice(0, 3).map((item, key: React.Key) => {
               return (
                 <div className="group relative mb-4 rounded-2xl" key={key}>
-                  <Link href={`/product/id`}>
+                  <Link href={`/portofolio/${item.slug}`}>
                     <Image
                       width={300}
                       height={300}
@@ -46,7 +46,7 @@ const PortofolioContent = () => {
                           {item.name}
                         </h2>
                         <p className="mt-2 max-w-[20rem] text-sm text-neutral-500 dark:text-neutral-400 line-clamp-2">
-                          {item.desc}
+                          {item.overview_description}
                         </p>
                       </div>
                     </div>

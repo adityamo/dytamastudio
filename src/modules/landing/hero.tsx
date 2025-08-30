@@ -7,6 +7,7 @@ import Image from "next/image";
 import { LuShieldCheck } from "react-icons/lu";
 // import { ContainerScroll } from "@/components/containerscroll";
 import { FiArrowRight } from "react-icons/fi";
+import { useRouter } from "next/navigation";
 
 const words = [
   "Bangun kreatifitasmu",
@@ -49,6 +50,8 @@ const FlippingWords: React.FC = () => {
 };
 
 export default function Hero() {
+  const router = useRouter();
+
   const handleToContact = () => {
     window.open(
       "https://wa.me/087888362186?text=Halo%20saya%20tertarik%20dengan%20layanan%20Anda",
@@ -116,6 +119,9 @@ export default function Hero() {
                   className="bg-indigo-600 dark:shadow-none light:shadow-indigo-100"
                   color="primary"
                   variant="shadow"
+                  onPress={() => {
+                    router.push(`/portofolio`);
+                  }}
                 >
                   Portofolio
                 </Button>

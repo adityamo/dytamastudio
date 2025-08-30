@@ -29,8 +29,8 @@ const PortofolioList = () => {
             {portofolioList.map((item, key: React.Key) => {
               return (
                 <div className="mx-auto w-90" key={key}>
-                  <Link href="portofolio/98923">
-                    <div className="group relative h-full overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-400 bg-white dark:bg-slate-900 transition duration-200 hover:shadow-xl">
+                  <Link href={`/portofolio/${item.slug}`}>
+                    <div className="group relative h-full overflow-hidden rounded-2xl border border-neutral-400 dark:border-gray-400 bg-white dark:bg-slate-900 transition duration-200 hover:shadow-xl">
                       <div className="relative aspect-[16/10] w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-gray-100">
                         <Image
                           src={item.imgUrl}
@@ -45,7 +45,7 @@ const PortofolioList = () => {
                           {item.name}
                         </h2>
                         <h2 className="my-4 text-sm font-normal text-zinc-500 dark:text-neutral-400 line-clamp-5">
-                          {item.desc}
+                          {item.overview_description}
                         </h2>
                         <div className="mt-10 flex flex-row items-center justify-between">
                           <div className="relative z-10 block rounded-xl bg-black dark:bg-secondary dark:text-black px-6 py-2 text-xs font-bold text-white">
