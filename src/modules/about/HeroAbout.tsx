@@ -53,7 +53,7 @@ const HeroAbout = () => {
                   width={340}
                   height={340}
                   src={"/assets/img/photo/aditya-septama.png"}
-                  alt="aditya-septama-picture"
+                  alt="aditya-septama"
                 />
               </div>
             </div>

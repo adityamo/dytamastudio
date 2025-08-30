@@ -14,16 +14,10 @@ import {
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
 import ThemeSwitcher from "../themeswitcher";
+import { handleToContact } from "@/helpers/globalHelper";
 
 const NavbarLanding2 = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const handleToContact = () => {
-    window.open(
-      "https://wa.me/087888362186?text=Halo%20saya%20tertarik%20dengan%20layanan%20Anda",
-      "_blank"
-    );
-  };
 
   return (
     <div className="relative w-full">
