@@ -49,9 +49,9 @@ const FooterLanding = () => {
               width={300}
               height={300}
               alt="dytama-icon"
-              className="h-auto w-10 lg:h-auto lg:w-50"
+              className="h-auto w-25 lg:h-auto lg:w-50"
             />
-            <p className="text-sm font-gray-500 font-normal text-start pt-5 dark:text-gray-600 ">
+            <p className="text-xs lg:text-sm font-gray-500 font-normal text-start pt-5 dark:text-gray-600 ">
               Dytama adalah studio kreatif yang berfokus pada pengembangan
               solusi digital mulai dari desain UI/UX, pengembangan website
               modern, hingga pembuatan produk digital siap pakai. Kami

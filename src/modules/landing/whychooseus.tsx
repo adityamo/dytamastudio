@@ -13,8 +13,8 @@ const WhyChooseUs = () => {
             <p className="text-sm font-semibold text-primary dark:text-secondary">
               Benefits
             </p>
-            <h3 className="text-3xl lg:text-4xl text-slate-700 dark:text-white font-bold">
-              Why Choose Us ?
+            <h3 className="text-3xl lg:text-4xl text-black dark:text-white font-bold">
+              Kenapa memilih Dytama ?
             </h3>
           </div>
         </div>

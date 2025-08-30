@@ -3,6 +3,7 @@ import Container from "@/components/container";
 import React from "react";
 import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
+import { handleToContact } from "@/helpers/globalHelper";
 
 const TechnologyContent = () => {
   return (
@@ -45,6 +46,7 @@ const TechnologyContent = () => {
           </div>
           <div className="flex w-full items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
             <button
+              onClick={handleToContact}
               type="button"
               className="py-3 px-10 inline-flex font-semibold items-center gap-x-2 text-sm rounded-xl border border-transparent bg-slate-800 text-white hover:bg-lime-500 focus:outline-hidden focus:bg-lime-500 disabled:opacity-50 disabled:pointer-events-none"
             >

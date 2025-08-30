@@ -25,12 +25,13 @@ const FqaContent = () => {
                 FAQ
               </p>
               <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
-                Frequently
+                Punya Pertanyaan?
                 <br />
-                asked questions
+                Berikut jawabannya
               </h2>
               <p className="mt-1 hidden md:block text-gray-600 dark:text-neutral-400">
-                Answers to the most frequently asked questions.
+                Berikut beberapa pertanyaan yang sering ditanyakan pelanggan,
+                beserta jawabannya untuk membantu Anda lebih memahami layanan.
               </p>
             </div>
           </div>

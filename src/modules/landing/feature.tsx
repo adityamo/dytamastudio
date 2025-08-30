@@ -45,7 +45,7 @@ const FeatureContent = () => {
                       <Image
                         width={800}
                         height={800}
-                        src={"/assets/img/illustration/services-1.png"}
+                        src={"/assets/img/illustration/services-4.png"}
                         alt="website-design"
                         className="w-full h-full lg:h-auto lg:object-cover"
                       />
@@ -127,11 +127,11 @@ const FeatureContent = () => {
                   className="overflow-hidden relative w-full"
                 >
                   <div className="overflow-hidden relative w-full">
-                    <div className="w-full h-full  rounded-t-3xl bg-slate-700 dark:bg-slate-700 dark:border-neutral-700 ml-6 mt-2">
+                    <div className="w-full h-full pt-2 px-2 lg:pt-4 lg:px-4 pb-0  rounded-t-2xl lg:rounded-t-3xl bg-slate-700 dark:border-neutral-700 ml-6 mt-2">
                       <Image
                         width={800}
                         height={800}
-                        src={"/assets/img/illustration/services-4.png"}
+                        src={"/assets/img/illustration/services-5.png"}
                         alt="website-design"
                         className="w-full h-full lg:h-auto lg:object-cover"
                       />
